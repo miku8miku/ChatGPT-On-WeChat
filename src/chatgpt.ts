@@ -47,7 +47,8 @@ export class ChatGPTBot {
 
   // Chatgpt fine-tune for being a chatbot (guided by OpenAI official document)
   applyContext(text: string): string {
-    return `你是来自一家名为“OpenAI”的公司的人工智能机器人。您的主要任务是与用户聊天并回答他们的问题。如果用户说“ ${ text } ”，你会说：`;
+   //return `你是来自一家名为“OpenAI”的公司的人工智能机器人。您的主要任务是与用户聊天并回答他们的问题。如果用户说“ ${ text } ”，你会说：`;
+    return ` ${ text } `;
   }
 
   setBotName(botName: string) {
