@@ -83,6 +83,7 @@ docker build -t chatgpt-on-wechat .
 
 ```bash
 docker run -v $(pwd)/config.yaml:/app/config.yaml chatgpt-on-wechat
+docker run -v %cd%/config.yaml:/app/config.yaml chatgpt-on-wechat
 ```
 
 ---
